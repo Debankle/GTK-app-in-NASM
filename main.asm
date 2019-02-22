@@ -1,6 +1,9 @@
+bits 64
+
 global _main
 
 %include "gtk.inc"
+
 
 section .bss
     window:     resq 1
@@ -51,6 +54,9 @@ section .text
         xor r8d, r8d
         xor r9d, r9d
         call _g_signal_connect_data
+
+        mov rdi, qword [ rel window ]
+        call _gtk_widget_show
 
         call _gtk_main
 
