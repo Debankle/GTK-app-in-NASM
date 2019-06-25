@@ -20,8 +20,4 @@ extern _gtk_settings_get_default
 extern _gtk_widget_set_size_request
 extern _gtk_window_set_default_size
 
-; Extern c functions
-extern _destroy_event
-extern _enable_dark_mode
-
 %endif      ; _gtk_inc_
