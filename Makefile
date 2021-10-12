@@ -3,8 +3,8 @@ OBJFILES 	:= 	main.o
 TARGET   	:= 	main
 
 NASM		:= 	nasm
-LD			:= 	ld
-CC			:= 	gcc-8
+LD		:= 	ld
+CC		:= 	gcc-8
 
 NASMFLAGS	:= 	-f macho64
 GTKFLAGS 	:= 	-L/usr/local/Cellar/gtk+3/3.24.8/lib -lgtk-3 -lgobject-2.0
